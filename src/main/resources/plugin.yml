@@ -1,0 +1,11 @@
+name: Shulkr
+version: '${version}'
+main: fr.paylicier.shulkr.Shulkr
+authors: [ Paylicier ]
+api-version: 1.13
+description: A secure Minecraft log hosting service
+website: https://shulkr.notri1.fr
+permissions:
+    shulkr.upload:
+        description: Allows the player to list and upload logs
+        default: op
