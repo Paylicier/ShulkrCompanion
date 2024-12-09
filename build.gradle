@@ -64,3 +64,8 @@ processResources {
         expand props
     }
 }
+
+shadowJar {
+    destinationDirectory.set(file("./builds/"))
+    archiveFileName = "Shulkr.jar"
+}
