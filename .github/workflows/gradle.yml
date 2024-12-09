@@ -36,6 +36,13 @@ jobs:
     - name: Build with Gradle Wrapper
       run: chmod 777 gradlew && ./gradlew shadowJar
 
+    - name: Upload Plugin jar
+      continue-on-error: true
+      uses: actions/upload-artifact@v3
+      with:
+        name: Shulkr.jar
+        path: $(pwd)/builds/Shulkr.jar
+
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
     #
