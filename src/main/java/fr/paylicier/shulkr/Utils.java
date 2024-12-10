@@ -59,7 +59,6 @@ public class Utils {
         url = url != null ? url : "https://shulkr.notri1.fr/api";
 
         HttpURLConnection connection = (HttpURLConnection) new URL(url+"/1/log").openConnection();
-        System.out.println(url+"/1/log");
         connection.setRequestMethod("POST");
         connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
         connection.setDoOutput(true);
